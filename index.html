@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eco-Alem - қазақ тіліндегі экологиялық 2D ойын. Қоқыс жинап, қайта өңдеп, ластанған жерді жасыл аймаққа айналдырыңыз."
+    />
+    <meta
+      name="keywords"
+      content="Eco-Alem, экологиялық ойын, қазақша ойын, қоқыс жинау, қайта өңдеу, табиғат, жасыл қала"
+    />
+    <meta name="author" content="Eco-Alem Studio" />
+    <meta property="og:title" content="Eco-Alem - Экологиялық ойын" />
+    <meta
+      property="og:description"
+      content="Қала саябағын қоқыстан тазалап, табиғатты қалпына келтіретін қазақша браузерлік ойын."
+    />
+    <meta property="og:type" content="website" />
+    <title>Eco-Alem | Экологиялық ойын</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#game" aria-label="Eco-Alem басты беті">
+        <span class="brand-mark">EA</span>
+        <span>Eco-Alem</span>
+      </a>
+      <nav class="nav" aria-label="Сайт бөлімдері">
+        <a href="#game">Ойын</a>
+        <a href="#about">Идея</a>
+        <a href="#report">Есепке</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-section" id="game">
+        <div class="game-shell">
+          <div class="game-heading">
+            <div>
+              <p class="eyebrow">Қазақша экологиялық ойын</p>
+              <h1>Eco-Alem</h1>
+            </div>
+            <p>
+              Кейіпкерді басқарып, қоқыс жинаңыз, қайта өңдеңіз, ластанған
+              жерді тазалап, жасыл саябақты қалпына келтіріңіз.
+            </p>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas
+              id="gameCanvas"
+              width="800"
+              height="600"
+              aria-label="Eco-Alem ойыны"
+            ></canvas>
+          </div>
+
+          <div class="mobile-controls" aria-label="Мобильді басқару">
+            <div class="dpad">
+              <button data-key="ArrowUp" aria-label="Жоғары">↑</button>
+              <button data-key="ArrowLeft" aria-label="Солға">←</button>
+              <button data-key="ArrowDown" aria-label="Төмен">↓</button>
+              <button data-key="ArrowRight" aria-label="Оңға">→</button>
+            </div>
+            <button class="action-touch" id="touchAction">Әрекет</button>
+          </div>
+
+          <div class="help-grid">
+            <article>
+              <strong>Басқару</strong>
+              <span>WASD немесе бағыттар - жүру, E - әрекет.</span>
+            </article>
+            <article>
+              <strong>Мақсат</strong>
+              <span>Барлық қоқысты өңдеп, барлық жерді жасыл қылыңыз.</span>
+            </article>
+            <article>
+              <strong>Мобильді</strong>
+              <span>Төмендегі батырмалар арқылы телефоннан да ойнауға болады.</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-copy">
+          <p class="eyebrow">Жоба идеясы</p>
+          <h2>Табиғатты ойын арқылы түсіндіру</h2>
+          <p>
+            Eco-Alem - Terra Nil идеясынан шабыт алған шағын экологиялық ойын.
+            Мұнда ойыншы табиғатты пайдаланып қана қоймай, оны қалпына
+            келтіреді: қалдық жинайды, қайта өңдейді, топырақты тазартады және
+            көгал отырғызады.
+          </p>
+        </div>
+        <div class="feature-list">
+          <article>
+            <span>01</span>
+            <h3>Қоқыс жинау</h3>
+            <p>Пластик, қағаз, металл және улы қалдықтарды жинап, станцияға апарыңыз.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Қайта өңдеу</h3>
+            <p>Қалдықтар Эко-қуатқа айналады. Сол қуат табиғатты қалпына келтіруге жұмсалады.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Жасылдандыру</h3>
+            <p>Ластанған топырақты тазалап, көгал мен ағаш отырғызу арқылы жеңіске жетіңіз.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section report" id="report">
+        <div>
+          <p class="eyebrow">Практика есебіне</p>
+          <h2>Дайын сипаттама</h2>
+        </div>
+        <p>
+          Eco-Alem жобасы экологиялық мәдениетті дамытуға арналған. Ойын
+          JavaScript және HTML5 Canvas арқылы браузерде жұмыс істейді. Пайдаланушы
+          кейіпкерді басқарып, қоқыс жинайды, қалдықтарды қайта өңдейді,
+          ластанған жерді тазартады және жасыл аймақ қалыптастырады. Жоба
+          қазақ тілінде жасалып, қолданушыларға сайт арқылы тегін қолжетімді
+          етіледі.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Eco-Alem Studio</span>
+      <span>Экология, білім және ойын</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
